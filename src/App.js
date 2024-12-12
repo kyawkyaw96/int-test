@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import PatternGen from "./PatternGen";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div >
+      <h1>Center</h1>
+      <PatternGen type="centered" />
+      <h1>left</h1>
+      <PatternGen type="left" />
+      <h1>custom</h1>
+      <PatternGen type="custom" />
+      <h1>Right</h1>
+      <PatternGen type="right" />
     </div>
   );
-}
+};
 
 export default App;
